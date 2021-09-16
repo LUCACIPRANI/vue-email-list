@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- import Vue.js  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- import AXIOS  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <!-- import file CSS  -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Esercitazione Vue.js</title>
+  </head>
+  <body>
+    <!-- start app  -->
+    <div id="app" class="container">
+      <section>
+        <h3 style="margin: 20px">Email list:</h3>
+
+        <ul>
+          <li v-for="email in allEmails">{{email}}</li>
+        </ul>
+      </section>
+      <!-- <section>
+        <h3 style="margin: 20px">Number list:</h3>
+
+        <ul>
+          <li v-for="number in allNumbers">{{number}}</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3 style="margin: 20px">Phone list:</h3>
+
+        <ul>
+          <li v-for="phone in allPhone">{{phone}}</li>
+        </ul>
+      </section> -->
+      <!-- End app  -->
+    </div>
+
+    <!-- import javascript-->
+    <script src="main.js"></script>
+  </body>
+</html>

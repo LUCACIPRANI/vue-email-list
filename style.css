@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to left, lightgray 97%, green 2%);
+}
+.container {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
+ul li{
+  list-style-type: none;
+}
+section{
+    margin: 0 auto;
+    float: left;
+}
