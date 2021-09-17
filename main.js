@@ -11,14 +11,10 @@ const app = new Vue({
   el: "#app",
   data: {
     allEmails: [],
-    // allNumbers: [], 
-    // allPhone: [],
+    allNumbers: [],
+    allPhone: [],
   },
-  computed: {
-    alltogether() {
-      
-    },
-  },
+  methods: {},
   mounted() {
     for (let i = 0; i < 10; i++) {
       axios
@@ -27,22 +23,21 @@ const app = new Vue({
           this.allEmails.push(response.data.response);
         });
     }
-    console.log(this.allEmails);
 
-    // for (let i = 0; i < 10; i++) {
-    //     axios
-    //       .get("https://flynn.boolean.careers/exercises/api/random/int")
-    //       .then((response) => {
-    //         this.allNumbers.push(response.data.response);
-    //       });
-    //   }
+    for (let i = 0; i < 10; i++) {
+      axios
+        .get("https://flynn.boolean.careers/exercises/api/random/int")
+        .then((response) => {
+          this.allNumbers.push(response.data.response);
+        });
+    }
 
-    //   for (let i = 0; i < 10; i++) {
-    //     axios
-    //       .get("https://flynn.boolean.careers/exercises/api/random/phone")
-    //       .then((response) => {
-    //         this.allPhone.push(response.data.response);
-    //       });
-    //   }
+    for (let i = 0; i < 10; i++) {
+      axios
+        .get("https://flynn.boolean.careers/exercises/api/random/phone")
+        .then((response) => {
+          this.allPhone.push(response.data.response);
+        });
+    }
   },
 });

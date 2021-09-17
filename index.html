@@ -16,28 +16,36 @@
   <body>
     <!-- start app  -->
     <div id="app" class="container">
+      <!-- email  -->
       <section>
         <h3 style="margin: 20px">Email list:</h3>
 
         <ul>
-          <li v-for="email in allEmails">{{email}}</li>
+          <li v-for="email in allEmails" v-if="allEmails.length == 10">
+            {{email}}
+          </li>
         </ul>
       </section>
-      <!-- <section>
+      <!-- number  -->
+      <section>
         <h3 style="margin: 20px">Number list:</h3>
 
         <ul>
-          <li v-for="number in allNumbers">{{number}}</li>
+          <li v-for="number in allNumbers" v-if="allNumbers.length == 10">
+            {{number}}
+          </li>
         </ul>
       </section>
-
+      <!-- phone  -->
       <section>
         <h3 style="margin: 20px">Phone list:</h3>
 
         <ul>
-          <li v-for="phone in allPhone">{{phone}}</li>
+          <li v-for="phone in allPhone " v-if="allPhone.length == 10">
+            {{phone}}
+          </li>
         </ul>
-      </section> -->
+      </section>
       <!-- End app  -->
     </div>
 
